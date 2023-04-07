@@ -1,16 +1,33 @@
 import './Nav.css'
-
+import { useState,useEffect } from 'react'
 const Nav=()=>{
+  const[show,setShow]=useState(false);
+  const scrollHandler=()=>{
+    if(window.scrollY>10){
+      setShow(true);
+    }else{
+      setShow(false);
+    }
+  };
+
+  useEffect(()=>{
+    window.addEventListener('scroll',scrollHandler);
+    return()=>{
+      window.removeEventListener('scroll',scrollHandler);
+    };
+  },[]);
     return(
-        <nav>
+        <nav style={{
+          backgroundColor: show ? 'rgb(20,20,20)' : 'transparent',
+        }}>
             <section>
             <div className="nav_left">
                 <img
                 className="nav_logo"
                 alt="Logo"
-                src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
+                src="https://www.edigitalagency.com.au/wp-content/uploads/Netflix-logo-red-black-png.png"
                 />
-                <div className="nav_links">
+                 <div className="nav_links">
                     <a href="/">Home</a>
                     <a href="/">TV Shows</a>
                     <a href="/">TV Movies</a>

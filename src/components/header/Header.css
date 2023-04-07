@@ -1,0 +1,97 @@
+header {
+    height: 100vh;
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/8a6a68144592045.628efcd3e77b5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.header_inner_shadow {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgb(20, 20, 20, 1) 0%, rgb(20, 20, 20, 0) 75%),
+        linear-gradient(180deg, rgb(20, 20, 20, 0.7) 0%, rgb(20, 20, 20, 0) 100%)
+}
+
+.header_content {
+    margin-left: 5vw;
+    padding-top: 40vw;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header_billboard {
+    width: 24vw;
+    object-fit: cover;
+    z-index: 2;
+    position: relative;
+    margin-top: -8%;
+}
+
+.header_desc {
+    width: 50%;
+    height: 10vh;
+    color: white;
+    font-size: 1.1vw;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0.1vw;
+    z-index: 2;
+    position: relative;
+    margin-top: -8%;
+}
+
+.header_buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5vw;
+    z-index: 2;
+    position: relative;
+}
+
+.header_button {
+    border-radius: 4px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    padding: 0.7rem;
+    padding-left: 2rem;
+    padding-right: 2.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+.header_button svg {
+    margin-right: 0.4rem;
+}
+
+.play_button {
+    background-color: #fff;
+    margin-right: 1rem;
+}
+
+.play_button:hover {
+    background-color: #e6e6e6;
+}
+
+.more_info_button {
+    background-color: rgba(30, 30, 30, 0.644);
+    color: #fff;
+}
+
+.more_info_button:hover {
+    background-color: rgba(30, 30, 30, 0.8);
+}

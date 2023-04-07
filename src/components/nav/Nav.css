@@ -1,5 +1,5 @@
 nav {
-    height: 8vh;
+    height: 10vh;
     width: 100vw;
     position: fixed;
     z-index: 10;
@@ -21,7 +21,7 @@ section {
 }
 
 .nav_logo {
-    height: 1.8rem;
+    height: 3rem;
 }
 
 .nav_links {
